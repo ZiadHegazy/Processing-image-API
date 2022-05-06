@@ -1,0 +1,47 @@
+{
+  "name": "udacity",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "lint": "eslint . --ext .ts",
+    "prettier": "prettier --config .prettierrc \"src/**/*.ts\" --write",
+    "jasmine": "jasmine",
+    "test": "npm run build && npm run jasmine",
+    "start": "nodemon ./src/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/lodash": "^4.14.182",
+    "express": "^4.18.1",
+    "jasmine": "^4.1.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "lint": "^0.7.0",
+    "loadash": "^1.0.0",
+    "lodash": "^4.17.21",
+    "supertest": "^6.2.3",
+    "typescript": "^4.6.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/jasmine": "^4.0.3",
+    "@types/node": "^17.0.31",
+    "@types/sharp": "^0.30.2",
+    "@types/supertest": "^2.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "@typescript-eslint/parser": "^5.21.0",
+    "ejs": "^3.1.7",
+    "eslint": "^8.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "gm": "^1.23.1",
+    "image-size": "^1.0.1",
+    "nodemon": "^2.0.16",
+    "prettier": "2.6.2",
+    "sharp": "^0.30.4",
+    "ts-node": "^10.7.0"
+  }
+}
